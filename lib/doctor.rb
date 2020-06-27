@@ -13,7 +13,7 @@ class Doctor
   end
 
   def patients
-    self.all.collect {|appointment| appointment.patient}
+    self.collect {|appointment| appointment.patient}
   end
 
   def self.all
